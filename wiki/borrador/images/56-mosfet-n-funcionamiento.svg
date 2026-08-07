@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.49323377"
-     inkscape:cx="984.32027"
-     inkscape:cy="384.19916"
+     inkscape:zoom="0.98646754"
+     inkscape:cx="963.53905"
+     inkscape:cy="312.73203"
      inkscape:window-width="1866"
      inkscape:window-height="1011"
      inkscape:window-x="54"
@@ -276,4 +276,14 @@
          style="fill:#ff0000;stroke:none;stroke-width:1.05833"
          x="273.2984"
          y="150.14558"
-         id="tspan33">NO CONDUCE</tspan></text></g></svg>
+         id="tspan33">NO CONDUCE</tspan></text><text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:7.54937px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.05833;stroke-linecap:round"
+       x="294.87134"
+       y="68.100113"
+       id="text34"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke:none;stroke-width:1.05833"
+         x="294.87134"
+         y="68.100113"
+         id="tspan34">I=0</tspan></text></g></svg>
