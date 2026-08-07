@@ -25,8 +25,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.98646754"
-     inkscape:cx="963.53905"
-     inkscape:cy="312.73203"
+     inkscape:cx="703.0135"
+     inkscape:cy="357.33563"
      inkscape:window-width="1866"
      inkscape:window-height="1011"
      inkscape:window-x="54"
@@ -279,11 +279,31 @@
          id="tspan33">NO CONDUCE</tspan></text><text
        xml:space="preserve"
        style="font-weight:bold;font-size:7.54937px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.05833;stroke-linecap:round"
-       x="294.87134"
-       y="68.100113"
+       x="298.88458"
+       y="86.216743"
        id="text34"><tspan
          sodipodi:role="line"
          style="fill:#000000;stroke:none;stroke-width:1.05833"
-         x="294.87134"
-         y="68.100113"
-         id="tspan34">I=0</tspan></text></g></svg>
+         x="298.88458"
+         y="86.216743"
+         id="tspan34">I=0</tspan></text><text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:7.54937px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.05833;stroke-linecap:round"
+       x="299.69919"
+       y="55.068604"
+       id="text35"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke:none;stroke-width:1.05833"
+         x="299.69919"
+         y="55.068604"
+         id="tspan35">vdd</tspan></text><text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:7.54937px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:1.05833;stroke-linecap:round"
+       x="299.15637"
+       y="117.53947"
+       id="text36"><tspan
+         sodipodi:role="line"
+         style="fill:#000000;stroke:none;stroke-width:1.05833"
+         x="299.15637"
+         y="117.53947"
+         id="tspan36">vss</tspan></text></g></svg>
