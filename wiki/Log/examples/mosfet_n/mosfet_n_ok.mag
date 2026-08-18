@@ -1,0 +1,93 @@
+magic
+tech sky130A
+timestamp 1787045264
+<< nmos >>
+rect 20 0 40 60
+<< ndiff >>
+rect -50 45 20 60
+rect -50 15 -30 45
+rect 0 15 20 45
+rect -50 0 20 15
+rect 40 45 110 60
+rect 40 15 60 45
+rect 90 15 110 45
+rect 40 0 110 15
+rect -40 -25 10 0
+rect 50 -25 100 0
+<< ndiffc >>
+rect -30 15 0 45
+rect 60 15 90 45
+<< psubdiff >>
+rect -50 -70 40 -55
+rect -50 -90 -20 -70
+rect 0 -90 40 -70
+rect -50 -100 40 -90
+<< psubdiffcont >>
+rect -20 -90 0 -70
+<< poly >>
+rect -10 120 70 140
+rect -10 100 20 120
+rect 40 100 70 120
+rect -10 80 70 100
+rect 20 60 40 80
+rect 20 -15 40 0
+<< polycont >>
+rect 20 100 40 120
+<< locali >>
+rect -5 130 65 135
+rect -5 90 10 130
+rect 50 90 65 130
+rect -5 85 65 90
+rect -45 45 15 55
+rect -45 15 -30 45
+rect 0 15 15 45
+rect -45 5 15 15
+rect 45 45 105 55
+rect 45 15 60 45
+rect 90 15 105 45
+rect 45 5 105 15
+rect -40 -25 10 5
+rect 50 -25 100 5
+rect -45 -65 35 -60
+rect -45 -95 -25 -65
+rect 5 -95 35 -65
+<< viali >>
+rect 10 120 50 130
+rect 10 100 20 120
+rect 20 100 40 120
+rect 40 100 50 120
+rect 10 90 50 100
+rect -30 15 0 45
+rect 60 15 90 45
+rect -25 -70 5 -65
+rect -25 -90 -20 -70
+rect -20 -90 0 -70
+rect 0 -90 5 -70
+rect -25 -95 5 -90
+<< metal1 >>
+rect 0 130 60 190
+rect 0 90 10 130
+rect 50 90 60 130
+rect 0 85 60 90
+rect -40 45 10 50
+rect -40 15 -30 45
+rect 0 15 10 45
+rect -40 -25 10 15
+rect 50 45 100 50
+rect 50 15 60 45
+rect 90 15 100 45
+rect 50 -25 100 15
+rect -35 -65 15 -60
+rect -35 -95 -25 -65
+rect 5 -95 15 -65
+rect -35 -125 15 -95
+<< labels >>
+rlabel metal1 25 175 30 180 1 GATE
+port 3 n
+rlabel metal1 70 -15 75 -10 1 DRAIN
+port 2 n
+rlabel metal1 -20 -15 -15 -10 1 SOURCE
+port 1 n
+rlabel metal1 -15 -120 -10 -115 1 VSUBS
+port 4 n
+<< end >>
