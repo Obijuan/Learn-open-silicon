@@ -1,12 +1,58 @@
 magic
 tech sky130A
-timestamp 1786823300
+timestamp 1786904825
 << nmos >>
-rect 25 0 40 45
+rect 25 -5 45 45
 << ndiff >>
-rect 0 0 25 45
-rect 40 0 65 45
+rect -25 30 25 45
+rect -25 10 -10 30
+rect 10 10 25 30
+rect -25 -5 25 10
+rect 45 30 100 45
+rect 45 10 60 30
+rect 80 10 100 30
+rect 45 -5 100 10
+rect 130 30 180 45
+rect 130 10 145 30
+rect 165 10 180 30
+rect 130 -5 180 10
+<< ndiffc >>
+rect -10 10 10 30
+rect 60 10 80 30
+rect 145 10 165 30
 << poly >>
-rect 25 45 40 60
-rect 25 -15 40 0
+rect 5 95 65 110
+rect 5 75 25 95
+rect 45 75 65 95
+rect 5 60 65 75
+rect 25 45 45 60
+rect 25 -20 45 -5
+<< polycont >>
+rect 25 75 45 95
+<< locali >>
+rect 15 95 55 105
+rect 15 75 25 95
+rect 45 75 55 95
+rect 15 65 55 75
+rect -20 30 20 40
+rect -20 10 -10 30
+rect 10 10 20 30
+rect -20 0 20 10
+rect 50 30 90 40
+rect 50 10 60 30
+rect 80 10 90 30
+rect 50 0 90 10
+rect 135 30 175 40
+rect 135 10 145 30
+rect 165 10 175 30
+rect 135 0 175 10
+<< labels >>
+rlabel polycont 25 75 45 95 1 GATE
+port 3 n
+rlabel ndiffc -10 10 10 30 1 SOURCE
+port 1 n
+rlabel ndiffc 60 10 80 30 1 DRAIN
+port 2 n
+rlabel ndiffc 145 10 165 30 1 VSUBS
+port 4 n
 << end >>
