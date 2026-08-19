@@ -1,12 +1,24 @@
 magic
 tech sky130A
-timestamp 1787047070
+timestamp 1787126518
 << nmos >>
-rect 70 0 90 60
+rect 50 0 70 60
 << ndiff >>
-rect 0 0 70 60
-rect 90 0 160 60
+rect 0 40 50 60
+rect 0 20 15 40
+rect 35 20 50 40
+rect 0 0 50 20
+rect 70 0 120 60
+<< ndiffc >>
+rect 15 20 35 40
 << poly >>
-rect 70 60 90 75
-rect 70 -15 90 0
+rect 50 60 70 75
+rect 50 -15 70 0
+<< locali >>
+rect -35 40 45 50
+rect -35 20 15 40
+rect 35 20 45 40
+rect -35 10 45 20
+<< metal1 >>
+rect -70 10 0 50
 << end >>
