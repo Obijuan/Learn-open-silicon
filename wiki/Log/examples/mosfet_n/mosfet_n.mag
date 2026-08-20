@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1787165666
+timestamp 1787215117
 << nmos >>
 rect 50 0 70 60
 << ndiff >>
@@ -8,9 +8,13 @@ rect 0 40 50 60
 rect 0 20 15 40
 rect 35 20 50 40
 rect 0 0 50 20
-rect 70 0 120 60
+rect 70 40 120 60
+rect 70 20 85 40
+rect 105 20 120 40
+rect 70 0 120 20
 << ndiffc >>
 rect 15 20 35 40
+rect 85 20 105 40
 << psubdiff >>
 rect 0 -45 50 -30
 rect 0 -65 15 -45
@@ -38,6 +42,11 @@ rect -35 20 -25 40
 rect -5 20 15 40
 rect 35 20 45 40
 rect -35 10 45 20
+rect 75 40 155 50
+rect 75 20 85 40
+rect 105 20 125 40
+rect 145 20 155 40
+rect 75 10 155 20
 rect -35 -45 45 -35
 rect -35 -65 -25 -45
 rect -5 -65 15 -45
@@ -46,6 +55,7 @@ rect -35 -75 45 -65
 << viali >>
 rect 15 80 35 100
 rect -25 20 -5 40
+rect 125 20 145 40
 rect -25 -65 -5 -45
 << metal1 >>
 rect -70 100 40 110
@@ -56,6 +66,10 @@ rect -70 40 0 50
 rect -70 20 -25 40
 rect -5 20 0 40
 rect -70 10 0 20
+rect 120 40 190 50
+rect 120 20 125 40
+rect 145 20 190 40
+rect 120 10 190 20
 rect -70 -45 0 -35
 rect -70 -65 -25 -45
 rect -5 -65 0 -45
@@ -65,4 +79,8 @@ rlabel metal1 -55 30 -55 30 1 SOURCE
 port 1 n
 rlabel metal1 -55 90 -55 90 1 GATE
 port 2 n
+rlabel metal1 -55 -55 -55 -55 1 VSUBS
+port 3 n
+rlabel metal1 175 30 175 30 1 DRAIN
+port 4 n
 << end >>
