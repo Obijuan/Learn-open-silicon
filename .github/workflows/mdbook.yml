@@ -1,0 +1,54 @@
+name: Deploy mdBook to GitHub Pages
+
+on:
+  push:
+    branches: ["main"] # Cambia a "master" si corresponde
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Instalar mdBook
+        uses: peaceiris/actions-mdbook@v2
+        with:
+          mdbook-version: 'latest'
+
+      # Configura la caché de Cargo para no recomputar en cada commit
+      - name: Cache de binaries de Cargo
+        uses: actions/cache@v4
+        with:
+          path: ~/.cargo/bin/
+          key: ${{ runner.os }}-cargo-katex-v1
+
+      # Instala mdbook-katex compilando con cargo si no está en la caché
+      - name: Instalar mdbook-katex
+        run: |
+          which mdbook-katex || cargo install mdbook-katex
+
+      - name: Compilar la documentación (Generar HTML)
+        run: mdbook build
+
+      - name: Subir artefactos de la web
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./book
+
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        
