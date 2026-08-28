@@ -68,8 +68,6 @@ Normalmente las moléculas se representan mediante esferas para los átomos que 
 
 ## El átomo de Helio
 
-🚧 DEBUG 🚧
-
 El siguiente elemento es el **Helio**, cuyo símbolo es **He**. Está formado por **2 protones**, y tiene 2 electrones orbitando. Su número atómico es 2
 
 ![](images/06-helio.svg)  
@@ -78,3 +76,10 @@ A diferencia del hidrógeno, el Helio **NO SE COMBINA CON NADA**. Por eso recibe
 
 La molécula de hidrógeno $H_2$ tiene también 2 protones, y 2 electrones, pero es COMPLETAMENTE DIFERENTE. Es un elemento diferente. De hecho, el hidrógeno como gas es inflamable (explota en presencia de oxígeno), mientras que el He es inerte. No reacciona con nada
 
+## El resto de átomos
+
+El siguiente átomo es el de **Litio** (Li), que tiene número atómico 3, luego el **Berilio** (Be) con 4, y así sucesivamente con todos los elementos conocidos. Cada nuevo elemento tiene **un protón más** que el anterior. También tiene más neutrones, pero esto lo vamos a obviar, porque los neutrones sólo aportan masa al átomo, y no es importante para el diseño de circuitos
+
+Otra clave en la diferencia entre los átomos es en dónde se sitúan **los órbitales de los electrones**. Cuando más protones, más electrones se necesitan, y estos se sitúan en diferentes orbitales, en regiones diferentes del espacio. Para el estudio de los circuitos lo único que nos interesa es conocer los **electrones** situados en **los orbitales más exteriores**, que tiene la **menor energia**, y son los causantes de que los átomos se enlacen a otros átomos
+
+🚧 DEBUG 🚧
