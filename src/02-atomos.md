@@ -54,8 +54,6 @@ El átomo más sencillo es el de **Hidrógeno** (H), que sólo tiene **1 protón
 
 ## Molécula de hidrógeno
 
-🚧 DEBUG 🚧
-
 En la naturaleza **no hay átomos de hidrógeno aislados**, sino que están combinados con otros elementos, o consigo mismo. Cuando hablamos de hidrógeno como gas, nos estamos refiriendo a la molécula $H_2$, compuesta por la unión de **2 átomos de hidrógeno**
 
 En esta **molécula** los dos núcleos de hidrógeno comparten ambos electrones, formando un orbital de 2 electrones compartido entre ambos nucleos. Este nuevo **orbital** lo representamos mediante un elipsoide verde. Cuando los dos núcleos comparten sus electrones para formar este nuevo orbinal, quedan **fuertemente unidos** mediante lo que llamamos un **enlace covalente**
@@ -67,4 +65,16 @@ En esta molécula, los dos electrones pertenecen a ambos núcleos. Es una **uni�
 Normalmente las moléculas se representan mediante esferas para los átomos que están unidas por los **enlaces covalentes**. Estas uniones se representan mediante cilindros. Así, la molécula $H_2$ se representa típicamente así:
 
 ![](images/05-2-hidrogeno-molecula.svg)  
+
+## El átomo de Helio
+
+🚧 DEBUG 🚧
+
+El siguiente elemento es el **Helio**, cuyo símbolo es **He**. Está formado por **2 protones**, y tiene 2 electrones orbitando. Su número atómico es 2
+
+![](images/06-helio.svg)  
+
+A diferencia del hidrógeno, el Helio **NO SE COMBINA CON NADA**. Por eso recibe el nombre de **gas inerte**. Es un átomo **muy estable**, que no interacciona con ningún otro átomo, ni siquiera consigo mismo
+
+La molécula de hidrógeno $H_2$ tiene también 2 protones, y 2 electrones, pero es COMPLETAMENTE DIFERENTE. Es un elemento diferente. De hecho, el hidrógeno como gas es inflamable (explota en presencia de oxígeno), mientras que el He es inerte. No reacciona con nada
 
