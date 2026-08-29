@@ -82,4 +82,3 @@ El siguiente átomo es el de **Litio** (Li), que tiene número atómico 3, luego
 
 Otra clave en la diferencia entre los átomos es en dónde se sitúan **los órbitales de los electrones**. Cuando más protones, más electrones se necesitan, y estos se sitúan en diferentes orbitales, en regiones diferentes del espacio. Para el estudio de los circuitos lo único que nos interesa es conocer los **electrones** situados en **los orbitales más exteriores**, que tiene la **menor energia**, y son los causantes de que los átomos se enlacen a otros átomos
 
-🚧 DEBUG 🚧
