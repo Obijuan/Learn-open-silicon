@@ -29,9 +29,6 @@ Si apretamos las dos varillas (INA y INB), los dos pulsadores superiores `A0` y 
 
 ## Nivel de semiconductores
 
-🚧 DEBUG 🚧
-
-
 Esta es la implementación del chip a nivel de semiconductores
 
 ![](images/82-puerta-nand-silicio.svg)  

@@ -9,3 +9,4 @@
 [El transistor MOSFET](07-mosfet.md)   
 [Puerta NOT](08-not.md)  
 [Puerta NAND](09-nand.md)  
+[Biestable D](10-biestable-d.md)  
