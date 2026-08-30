@@ -71,6 +71,4 @@ Ahora introducimos 0v por la puerta. Aparece un campo eléctrico desde la zona P
 
 ![](images/61-mosfet-P-funcionamiento-open.svg)  
 
-🚧 DEBUG 🚧
-
 
