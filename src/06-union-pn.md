@@ -32,4 +32,3 @@ En esta figura se muestra la sección del diodo junto al símbolo utilizado para
 
 ![](images/52-diodo-simbolo.svg)  
 
-🚧 DEBUG 🚧
