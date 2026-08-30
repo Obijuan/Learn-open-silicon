@@ -97,5 +97,3 @@ El diseñador electrónico, a este nivel, crea diseños usando este nuevo símbo
 Esto tiene un efecto muy interesante. Ahora el diseñador puede crear cosas nuevas usando transistores, que en principio seguirán funcionando con **independencia de la tecnología** con la que están implementados. Ahora tenemos chips basados en semiconductores. En el futuro será otra tecnología, pero el funcionamiento del transistor es el mismo, y los diseños basados en él seguirán funcionando
 
 En el siguiente nivel de abstracción entramos en la **electrónica digital**, donde usamos un modelo mucho más implificado para la puerta NOT. Hacemos abstracción incluso de la tensión eléctrica. El diseñador no tiene que saber nada de tensiones ni corrientes, sólo de bits y cómo cambian al atravesar las diferentes puertas lógicas
-
-🚧 DEBUG 🚧
