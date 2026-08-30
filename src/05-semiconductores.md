@@ -215,4 +215,3 @@ Si la polaridad de la fuente de tensión se cambia, la corriente cambia de senti
 
 ![](images/47-silicio-tipoN-tension-inversa.svg)  
 
-🚧 DEBUG 🚧

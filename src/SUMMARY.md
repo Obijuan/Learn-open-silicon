@@ -5,3 +5,4 @@
 [Materiales conductores](03-conductores.md)  
 [Materiales aislantes](04-aislantes.md)  
 [Semiconductores](05-semiconductores.md)  
+[Unión PN](06-union-pn.md)  
