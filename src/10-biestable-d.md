@@ -82,6 +82,17 @@ El latch lo representamos como un bloque con las entradas correspondientes
 
 ![](images/101-latch.svg)  
 
+Esta es su **tabla de verdad**, donde **D** es la entrada, **Q** su estado actual (Salida) y las variables booleanas `d` y `q` que indican respectivamente el valor de la entrada y del estado actual (que puede ser 0 ó 1). El valor `x` significa **NO IMPORTA**. Da igual qué valor tenga
+
+| Ena | D | Q | Descripción |
+|-----|---|---|-------------|
+|  0  | x | q | Modo almacenamiento. El biestable almacena el valor q |
+|  1  | d | d | Modo transparente. La salida es la misma que la entrada |
+
+El Latch lo podemos representar como una **Barrera** que deja pasar o no los bits. La señal **ENA** significa **Barrera quitada**. Cuando `ena=0`, la barrera NO está quitada, es decir, que estamos en modo almacenamiento. Cuanod `ena=1`, la barrera está quitada, y estamos en modo transparente
+
+![alt text](images/101-latch-02.svg)
+
 ## Implementación del biestable D
 
 
@@ -93,4 +104,6 @@ Mediante este mecanismos, el biestable D sólo captura un valor en un instante m
 
 Para la implementación de un biestable D se necesitan un total de **26 MOSFETS**. 12 por cada Latch (24), y 2 más por el inversor (26). De todos ellos, la mitad son MOSFET-N y la otra mitad MOSFET-P
 
-🚧 DEBUG 🚧
+Vamos a estudiar este mecanismo más en detalle. Este es el **cronograma** que vamos a estudiar. Tenemos un Biestable D que inicialmente tiene almacenado el valor 0 (`Q=0)
+
+

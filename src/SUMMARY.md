@@ -10,3 +10,4 @@
 [Puerta NOT](08-not.md)  
 [Puerta NAND](09-nand.md)  
 [Biestable D](10-biestable-d.md)  
+[Diseño de Chips](11-chips.md)  
