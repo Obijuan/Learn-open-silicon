@@ -66,4 +66,19 @@ Si tienes curiosidad por cómo se hacen los Layouts de manera genérica, sin apl
 
 ### Layout en Magic
 
-🚧 DEBUG 🚧
+[Magic](https://github.com/RTimothyEdwards/magic) es un programa **Libre** para **diseñar y fabricar circuitos integrados** utilizando diferentes tecnologías
+
+![alt text](images/107-tutorial-magic-mosfet-n.png)  
+
+Si quieres aprender a utilizar un programa que sirve para **fabricar** chips reales, usando la **tecnología Sky130nm**, puedes seguir este tutorial:
+
+* [Tutorial de Magic: Construcción de un Mosfet N desde cero](https://obijuan.github.io/Tutorial-Magic/)  
+
+
+## Celda estándar
+
+
+🚧 TODO 🚧
+
+* https://www.zerotoasiccourse.com/terminology/standardcell/
+
