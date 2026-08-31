@@ -106,4 +106,4 @@ Para la implementación de un biestable D se necesitan un total de **26 MOSFETS*
 
 Vamos a estudiar este mecanismo más en detalle. Este es el **cronograma** que vamos a estudiar. Tenemos un Biestable D que inicialmente tiene almacenado el valor 0 (`Q=0)
 
-
+  🚧 TODO 🚧
