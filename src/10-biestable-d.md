@@ -104,6 +104,16 @@ Mediante este mecanismos, el biestable D sólo captura un valor en un instante m
 
 Para la implementación de un biestable D se necesitan un total de **26 MOSFETS**. 12 por cada Latch (24), y 2 más por el inversor (26). De todos ellos, la mitad son MOSFET-N y la otra mitad MOSFET-P
 
-Vamos a estudiar este mecanismo más en detalle. Este es el **cronograma** que vamos a estudiar. Tenemos un Biestable D que inicialmente tiene almacenado el valor 0 (`Q=0)
+Vamos a estudiar este mecanismo más en detalle. Este es el **cronograma** que vamos a estudiar. Tenemos un Biestable D que inicialmente tiene almacenado el valor 0 (`Q=0`), es decir, que su **estado** es `0`
+
+![alt text](images/101-latch-03.svg)
+
+La señal de reloj `CLK` se devide en **3 zonas**. En la primera (1) el reloj está a 0 (clk=`0`). Durante todo ese tiempo el estado del biestable es 0 (Q=`0`) y por su entrada llega `1`
+
+En la segunda zona (2) el reloj pasa a `1` (clk=`1`). Se produce un **flanco de subida** del reloj. En ese instante la entrada `1` se captura en el biestable y pasa a ser su estado final (Q=`1`)
+
+En la tercera zona (3) el reloj pasa a `0`, volviendo al estado inicial y completando un ciclo. La entrada no cambia y el estado tampoco
+
+Ahora que tenemos este cronograma, vamos a estudiar qué pasa en el interior del biestable D, con 
 
   🚧 TODO 🚧
