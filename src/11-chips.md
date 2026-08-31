@@ -17,8 +17,6 @@ Por tanto, para fabricar un chip, lo primero es tener acceso al **PDK del fabric
 
 ### Skywater 130nm
 
-🚧 DEBUG 🚧
-
 Las **tecnologías de fabricación** de chips reciben diferentes nombres, para diferenciarlas y poder ver cómo evolucionan. En los años 2000 exístía la [tecnología de 130nm](https://en.wikipedia.org/wiki/130_nm_process) usada por empresas como IBM, Intel, Texas Instrument...  
 
 En el 2020 surgió la **iniciativa SkyWater 130nm**, fomentada por Google, el fabricante de chips [Skywater Techonology](https://www.skywatertechnology.com/) y el fabricante efabless (que ha sido comprado por [Chipfoundry](https://chipfoundry.io/efabless) en el 2026). Liberaron el **PDK de 130nm**, con el nombre de **sky130**. Se trata del **primer PDK Industrial Libre** de la historia. Un hito histórico
@@ -33,5 +31,27 @@ En esta figura se resumen los **parámetros** más importantes de **Sky130**, as
 
 ![](images/103-pdk-sky130.png)  
 
+
+## Diseño a Bajo nivel
+
+🚧 DEBUG 🚧
+
+¿Cómo se diseña al más bajo nivel? Es decir, ¿cómo se diseñan los chips de la forma más cercana a la realidad? La labor del diseñador es **definir los transistores**, dimensionando y posicionando sus diferentes zonas, y realizar la **interconexión** de todos ellos. Esta parte del diseño, que típicamente se hace **gráficamente** se denomina **el Layout**. Lo podríamos traducir como el **plano del trazado**
+
+Este es un ejemplo del layout de un **mosfet N**, diseñado con **Magic**
+
+![](images/104-layout-1.png)  
+
+El **layout** se encuentra en uno o más archivos. El diseñador los crea utilizando **herramientas EDA** para chips. Una de las más antiguas y conocidas es [Magic VLSI](https://opencircuitdesign.com/magic/). Antiguamente este proceso se creaba mediante **dibujos físicos**. El diseñador lo dibujaba en papel
+
+A partir del **Layout** se obtiene el **Fichero de fabricación** que típicamente está en el formato [GDS](https://en.wikipedia.org/wiki/GDSII). Este fichero contiene **toda la información necesaria** para construir **todas** las capas del chips. Es el archivo que lee la máquina de construcción de chips
+
+Además, el Layout lo podemos **simular** para comprobar que funciona adecuadamente, antes de su fabricación, y también lo podemos **renderizar en 3D** para ver la estructura interna del chip
+
+Este es un pantallazo del renderizado 3D del fichero GDS generado a partir del layout del MOSFET N anterior. Se ha renderizado con la herramienta **KLayout**
+
+![](images/105-layout-GDS-3D.png)  
+
+El Layout se diseña con diferentes herramientas. Nosotros vamos a usar 2 diferentes, para tener intuición sobre cómo es el proceso
 
 🚧 DEBUG 🚧
