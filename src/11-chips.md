@@ -34,8 +34,6 @@ En esta figura se resumen los **parámetros** más importantes de **Sky130**, as
 
 ## Diseño a Bajo nivel
 
-🚧 DEBUG 🚧
-
 ¿Cómo se diseña al más bajo nivel? Es decir, ¿cómo se diseñan los chips de la forma más cercana a la realidad? La labor del diseñador es **definir los transistores**, dimensionando y posicionando sus diferentes zonas, y realizar la **interconexión** de todos ellos. Esta parte del diseño, que típicamente se hace **gráficamente** se denomina **el Layout**. Lo podríamos traducir como el **plano del trazado**
 
 Este es un ejemplo del layout de un **mosfet N**, diseñado con **Magic**
@@ -53,5 +51,19 @@ Este es un pantallazo del renderizado 3D del fichero GDS generado a partir del l
 ![](images/105-layout-GDS-3D.png)  
 
 El Layout se diseña con diferentes herramientas. Nosotros vamos a usar 2 diferentes, para tener intuición sobre cómo es el proceso
+
+### Layout en Siliwiz
+
+
+[Siliwiz](https://app.siliwiz.com/) es un programa que corre on-line para aprender los fundamentos del diseño de chips, desarrollado por [Matt Venn](https://zerotoasiccourse.com/matt_venn/) para su curso [Zero to asic](https://zerotoasiccourse.com/)
+
+![alt text](images/106-tutorial-siliwiz-mosfget.png)
+
+Si tienes curiosidad por cómo se hacen los Layouts de manera genérica, sin aplicar a una tecnología específica para que sea más sencillo, puedes seguir este **tutorial**
+
+* [Tutorial de Siliwz: Construyendo un Mosfet N desde cero](https://obijuan.github.io/Tutorial-Siliwiz/)
+
+
+### Layout en Magic
 
 🚧 DEBUG 🚧
