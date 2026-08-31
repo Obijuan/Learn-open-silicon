@@ -114,6 +114,11 @@ En la segunda zona (2) el reloj pasa a `1` (clk=`1`). Se produce un **flanco de 
 
 En la tercera zona (3) el reloj pasa a `0`, volviendo al estado inicial y completando un ciclo. La entrada no cambia y el estado tampoco
 
-Ahora que tenemos este cronograma, vamos a estudiar qué pasa en el interior del biestable D, con 
+Ahora que tenemos este cronograma, vamos a estudiar qué pasa en el interior del biestable D. El comportamiento de los **dos latches**, el **maestro** y el **esclavo** se resumen en esta figura
 
-  🚧 TODO 🚧
+![alt text](images/101-latch-04.svg)
+
+
+En la zona 1, cuando el reloj está a `0`, el **latch maestro** está en **modo transparente**, pero el **esclavo** está reteniendo el estado, que es `0`. Cuando llega un flanco de subida del reloj y clk pasa a valer `1`, ambos latches cambian su rol a la vez. El maestro que queda en modo almacenamiento, capturando el `1` que llega por la entrada. El esclavo pasa a transparente, por lo que por la salida sale el valor recién capturado
+
+Cuando llega el flanco de bajada, en la zona 3, los latches vuelven a cambiar sus roles, pero **la salida** no cambia, sigue con el valor anterior `1`. El maestro pasa a transparente, por lo que la nueva entrada lo atraviesa, PERO el esclavo se queda en modo de almacenamiento, guardando el valor anteriormente captura en el flanco de subida. El resultado es que no hay cambio de estado. Claro, es un biestable que SOLO captura en el flanco de subida
