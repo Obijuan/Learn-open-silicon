@@ -75,10 +75,47 @@ Si quieres aprender a utilizar un programa que sirve para **fabricar** chips rea
 * [Tutorial de Magic: Construcción de un Mosfet N desde cero](https://obijuan.github.io/Tutorial-Magic/)  
 
 
+## Visualización en 3D del Layout
+
+El **layout** se diseña en 2D, mediante rectángulos vistos desde arriva que identifican las diferentes zonas. Estos rectángulos están en **capas** a diferentes alturas, como ya sabemos
+
+Para evaluar un fichero GDS, y tener intuición sobre cómo es por dentro un chip, así como ver su "cableado", es muy interesante realizar un **renderizado 3D** del fichero GDS
+
+En esta sección resumimos las diferentes alternativas para renderizar en 3D los **ficheros GDS**, y proponemos una de ella, **el renderizado online**, para utilizar en nuestras pruebas y durante proceso de aprendizaje
+
+### Fichero GDS de pruebas
+
+Para probar el funcionamiento de los renderizadores podemos utilizar **cualquier fichero gds**. Pero como todavía no lo sabemos generar, vamos a utilizar un **gds de referencia** muy simple. Se corresponde con una **puerta not**
+
+* [test-ref.gds](examples/test-ref.gds)
+
+🚧 TODO 🚧
+* Buscar fichero gds del inversor...
+
+
+🚧 TODO 🚧
+* Klayout
+* GDS3D
+* Conversion a STL
+* Visualizacion on-ine
+
 ## Celda estándar
+
+Ya hemos visto cómo se crea un MOSFET N con la tecnología sky130. También sabemos cómo a partir de estos mosfets podemos crear otros elementos como inversores, puertas NAND, biestables D...
+
+El fabricante es el que **construye** una **biblioteca** de componentes asociadas a una tecnología, facilitando la vida al diseñador. Cada uno de estos componentes es lo que se llama una [celda estándar](https://www.zerotoasiccourse.com/terminology/standardcell/)
+
+Las celdas están diseñadas no sólo para tener una funcionalidad concreta (una puerta NOT, AND, etc...), sino que tiene unas **dimensiones estandarizadas** y se definen unas **posiciones** concretas para las entradas de alimentación y los pines de la celda. El objetivo es que se puedan crear diseños más complejos simplemente mediante la **unión** de estas celdas
+
+Típicamente la **altura** de las celdas está fijada, pero no su anchura. De esta forma se van **colocando en horizontal**, uniendo todas sus alimentaciones mediante unos **railes horizontales** (que son conexiones en la capa del metal)
+
+Además se colocan otros **railes verticales**, en otra capa metálica, para unir los railes horizontales
+
+🚧 TODO 🚧
+
 
 
 🚧 TODO 🚧
 * https://github.com/google/skywater-pdk-libs-sky130_fd_sc_hd
-* https://www.zerotoasiccourse.com/terminology/standardcell/
+* 
 
