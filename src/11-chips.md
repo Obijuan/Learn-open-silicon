@@ -112,8 +112,46 @@ Nos aparece el **renderizado 3D**, que podemos mover con el ratón
 ![alt text](images/111-gds-04-klayout-3D-3.png)
 
 
+### GDS3D
+
+[GDS3D](https://github.com/trilomix/GDS3D) es un programa libre para el renderizado 3D de ficheros en formato GDS. El ejecutable para Linux se puede bajar directamente de [sourceforge](https://sourceforge.net/projects/gds3d/), y así no hay que compilarlo manualmente. Para instalarlo basta con copiar el ejecutable `GDS3D` a un directorio accesible desde el `PATH`
+
+Para realizar el renderizado se necesita un archivo adicional, de texto, que indique las capas a renderizar y sus propiedades: colores, alturas, etc...
+
+Este es un ejemplo de ese fichero: [sky130.txt](examples/sky130.txt)  
+
+Vamos a renderizar nuestro fichero de referencia. Copiamos los ficheros `test-ref.gds` y `sky130.txt` en el mismo directorio, y ejecutamos `GDS3D -p sky130.txt -i test-ref.gds`
+
+```bash
+obijuan@JANEL:~/Develop/Learn-open-silicon/src/examples$ ls
+sky130.txt  test-ref.gds
+obijuan@JANEL:~/Develop/Learn-open-silicon/src/examples$ GDS3D -p sky130.txt -i test-ref.gds
+==============================================================================
+GDS3D v1.8, Copyright (C) 2013 IC-Design Group, University of Twente
+Created by Jasper Velner and Michiel Soer, http://icd.el.utwente.nl
+Based on the gds2pov project by Roger Light, http://atchoo.org/gds2pov/
+Copyright (C) 2004-2008 by Roger Light
+This program comes with ABSOLUTELY NO WARRANTY. You may distribute it freely
+as described in the readme.txt distributed with this file.
+==============================================================================
+
+Opened process file "sky130.txt"
+Warning: Shortkey is larger than 9, ignoring.
+
+Opening GDS file "test-ref.gds"..
+[...]
+```
+
+Se nos abre esta ventana. Vemos la **vista superior** del diseño
+
+![alt text](images/112-gds-05-GDS3D-1.png)
+
+Con el ratón cambiamos el punto vista, aunque no es intuitivo. También se puede cambiar con las flechas de los cursores. Pulsando la tecla `L` se muestra una ventana con las capas del diseño. Pinchando sobre cada una de ellas las podemos visualizar/ocultar
+
+![alt text](images/113-gds-06-GDS3D-2.png)
+
+
 🚧 TODO 🚧
-* GDS3D
 * Conversion a STL
 * Visualizacion on-ine
 
