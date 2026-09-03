@@ -79,6 +79,6 @@ Si quieres aprender a utilizar un programa que sirve para **fabricar** chips rea
 
 
 🚧 TODO 🚧
-
+* https://github.com/google/skywater-pdk-libs-sky130_fd_sc_hd
 * https://www.zerotoasiccourse.com/terminology/standardcell/
 
