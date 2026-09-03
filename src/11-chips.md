@@ -151,9 +151,49 @@ Con el ratón cambiamos el punto vista, aunque no es intuitivo. También se pued
 ![alt text](images/113-gds-06-GDS3D-2.png)
 
 
+### Conversión a STL: gdsiistl
+
+Otra manera de realizar la visualización 3D es **manualmente**, exportando primero el fichero **GDS** al formato **STL**. Esto se puede hacer con el script python [gdsiiistl](https://github.com/mbalestrini/gdsiistl)
+
+
+Para instalarlo hay que crear un entorno virtual de python con las dependencias. En un directorio colocamos el script `gdsiistl.py` y el fichero `test-ref.gds`
+
+```bash
+(test) obijuan@JANEL:~/Develop/Learn-open-silicon/src/examples/gdsiistl$ ls
+gdsiistl.py  test-ref.gds
+(test) obijuan@JANEL:~/Develop/Learn-open-silicon/src/examples/gdsiistl$ 
+```
+
+Desde ese directorio se ejecuta el comando `python3 gdsiistl.py test-ref.gds`, y se generan los ficheros **STL**, uno por cada capa
+
+```bash
+(test) obijuan@JANEL:~/Develop/Learn-open-silicon/src/examples/gdsiistl$ python3 gdsiistl.py test-ref.gds 
+Reading GDSII file test-ref.gds...
+Extracting polygons...
+Triangulating polygons...
+Extruding polygons and writing to files...
+    ((np.int64(68), np.int64(20)), met1) to test-ref.gds_met1.stl
+    ((np.int64(64), np.int64(20)), nwell) to test-ref.gds_nwell.stl
+    ((np.int64(67), np.int64(44)), mcon) to test-ref.gds_mcon.stl
+    ((np.int64(65), np.int64(20)), diff) to test-ref.gds_diff.stl
+    ((np.int64(66), np.int64(44)), licon) to test-ref.gds_licon.stl
+    ((np.int64(66), np.int64(20)), poly) to test-ref.gds_poly.stl
+    ((np.int64(67), np.int64(20)), li1) to test-ref.gds_li1.stl
+Done.
+(test) obijuan@JANEL:~/Develop/Learn-open-silicon/src/examples/gdsiistl$
+```
+
+Estos ficheros STL hay que importarlos en una aplicación capaz de leerlos, como por ejemplo Blender o Freecad
+
+Este fichero ha sido generado con Freecad: [test.FCStd](examples/gdsiistl/test.FCStd). Se han importado todos los STLs, se han cambiao de colores y se han movido para que unos estén encima de otros
+
+![alt text](images/114-gds-07-gdsiistl-1.png)
+
+### Visualización online (Recomendado)
+
 🚧 TODO 🚧
-* Conversion a STL
-* Visualizacion on-ine
+* 
+
 
 ## Celda estándar
 

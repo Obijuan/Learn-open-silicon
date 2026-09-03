@@ -1,0 +1,300 @@
+# SKY130A process definition for GDS3D v1.8
+# GDS3D process-definition syntax:
+# LayerStart / Layer / Datatype / Height / Thickness / RGB / Filter / Metal / Shortkey / Show / LayerEnd
+#
+# SKY130A GDS drawing layers used here:
+#   64  nwell
+#   65  diff/active
+#   66  poly
+#   67  li1
+#   68  met1
+#   69  via1
+#   70  met2
+#   71  via2
+#   72  met3
+#   73  via3
+#   74  met4
+#   75  via4
+#   76  met5
+#
+# Contact layers are also included:
+#   66/44 licon1
+#   67/44 mcon
+#
+# Heights and thicknesses are approximate visualization values in nm,
+# intended to give a useful 3D view rather than a sign-off-accurate
+# process stack. The GDS layer/datatype mapping is the important part.
+
+LayerStart: Substrate
+Layer: 255
+Datatype: 0
+Height: -10000
+Thickness: 10000
+Red: 0.18
+Green: 0.18
+Blue: 0.20
+Filter: 0.0
+Metal: 0
+Show: 1
+LayerEnd
+
+LayerStart: Nwell
+Layer: 64
+Datatype: 20
+Height: 0
+Thickness: 500
+Red: 0.45
+Green: 0.20
+Blue: 0.70
+Filter: 0.0
+Metal: 0
+Shortkey: 1
+Show: 1
+LayerEnd
+
+LayerStart: Diffusion
+Layer: 65
+Datatype: 20
+Height: 500
+Thickness: 180
+Red: 0.20
+Green: 0.75
+Blue: 0.25
+Filter: 0.0
+Metal: 0
+Shortkey: 2
+Show: 1
+LayerEnd
+
+LayerStart: Poly
+Layer: 66
+Datatype: 20
+Height: 680
+Thickness: 180
+Red: 0.90
+Green: 0.15
+Blue: 0.15
+Filter: 0.0
+Metal: 0
+Shortkey: 3
+Show: 1
+LayerEnd
+
+LayerStart: Licon1
+Layer: 66
+Datatype: 44
+Height: 860
+Thickness: 100
+Red: 0.95
+Green: 0.55
+Blue: 0.10
+Filter: 0.0
+Metal: 0
+Shortkey: 4
+Show: 1
+LayerEnd
+
+LayerStart: Li1
+Layer: 67
+Datatype: 20
+Height: 960
+Thickness: 100
+Red: 0.10
+Green: 0.70
+Blue: 0.75
+Filter: 0.0
+Metal: 1
+Shortkey: 5
+Show: 1
+LayerEnd
+
+LayerStart: Mcon
+Layer: 67
+Datatype: 44
+Height: 1060
+Thickness: 100
+Red: 0.95
+Green: 0.75
+Blue: 0.10
+Filter: 0.0
+Metal: 0
+Shortkey: 6
+Show: 1
+LayerEnd
+
+LayerStart: Metal1
+Layer: 68
+Datatype: 20
+Height: 1160
+Thickness: 300
+Red: 0.10
+Green: 0.45
+Blue: 0.95
+Filter: 0.0
+Metal: 1
+Shortkey: 7
+Show: 1
+LayerEnd
+
+LayerStart: Via1
+Layer: 69
+Datatype: 20
+Height: 1460
+Thickness: 100
+Red: 0.95
+Green: 0.55
+Blue: 0.10
+Filter: 0.0
+Metal: 0
+Shortkey: 8
+Show: 1
+LayerEnd
+
+LayerStart: Metal2
+Layer: 70
+Datatype: 20
+Height: 1560
+Thickness: 300
+Red: 0.95
+Green: 0.75
+Blue: 0.10
+Filter: 0.0
+Metal: 1
+Shortkey: 9
+Show: 1
+LayerEnd
+
+LayerStart: Via2
+Layer: 71
+Datatype: 20
+Height: 1860
+Thickness: 100
+Red: 0.75
+Green: 0.20
+Blue: 0.75
+Filter: 0.0
+Metal: 0
+Show: 1
+LayerEnd
+
+LayerStart: Metal3
+Layer: 72
+Datatype: 20
+Height: 1960
+Thickness: 300
+Red: 0.65
+Green: 0.35
+Blue: 0.85
+Filter: 0.0
+Metal: 1
+Show: 1
+LayerEnd
+
+LayerStart: Via3
+Layer: 73
+Datatype: 20
+Height: 2260
+Thickness: 100
+Red: 0.20
+Green: 0.80
+Blue: 0.80
+Filter: 0.0
+Metal: 0
+Show: 1
+LayerEnd
+
+LayerStart: Metal4
+Layer: 74
+Datatype: 20
+Height: 2360
+Thickness: 300
+Red: 0.95
+Green: 0.35
+Blue: 0.45
+Filter: 0.0
+Metal: 1
+Show: 1
+LayerEnd
+
+LayerStart: Via4
+Layer: 75
+Datatype: 20
+Height: 2660
+Thickness: 100
+Red: 0.85
+Green: 0.55
+Blue: 0.20
+Filter: 0.0
+Metal: 0
+Show: 1
+LayerEnd
+
+LayerStart: Metal5
+Layer: 76
+Datatype: 20
+Height: 2760
+Thickness: 400
+Red: 0.25
+Green: 0.85
+Blue: 0.35
+Filter: 0.0
+Metal: 1
+Show: 1
+LayerEnd
+
+# Common implant / threshold layers. They are shown thin and close to the
+# active region because they are mask layers, not physical metal layers.
+
+LayerStart: LVTN
+Layer: 93
+Datatype: 44
+Height: 500
+Thickness: 20
+Red: 0.20
+Green: 0.50
+Blue: 1.00
+Filter: 0.0
+Metal: 0
+Show: 1
+LayerEnd
+
+LayerStart: HVTP
+Layer: 78
+Datatype: 44
+Height: 500
+Thickness: 20
+Red: 1.00
+Green: 0.30
+Blue: 0.70
+Filter: 0.0
+Metal: 0
+Show: 1
+LayerEnd
+
+LayerStart: NSDM
+Layer: 93
+Datatype: 20
+Height: 520
+Thickness: 20
+Red: 0.15
+Green: 0.55
+Blue: 1.00
+Filter: 0.0
+Metal: 0
+Show: 1
+LayerEnd
+
+LayerStart: PSDM
+Layer: 94
+Datatype: 20
+Height: 540
+Thickness: 20
+Red: 1.00
+Green: 0.25
+Blue: 0.35
+Filter: 0.0
+Metal: 0
+Show: 1
+LayerEnd
+
+# End of SKY130A GDS3D v1.8 process definition.
