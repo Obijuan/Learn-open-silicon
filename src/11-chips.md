@@ -85,16 +85,34 @@ En esta sección resumimos las diferentes alternativas para renderizar en 3D los
 
 ### Fichero GDS de pruebas
 
-Para probar el funcionamiento de los renderizadores podemos utilizar **cualquier fichero gds**. Pero como todavía no lo sabemos generar, vamos a utilizar un **gds de referencia** muy simple. Se corresponde con una **puerta not**
+Para **probar el funcionamiento** de los renderizadores podemos utilizar **cualquier fichero gds**. Pero como todavía no lo sabemos generar, vamos a utilizar un **gds de referencia** muy simple. Se corresponde con una **puerta not**
 
 * [test-ref.gds](examples/test-ref.gds)
 
-🚧 TODO 🚧
-* Buscar fichero gds del inversor...
+### Klayout
+
+El programa Klayout nos permite visualizar un fichero GDS en 2D y 3D. Es el que hemos utilizado en el **tutorial de Magic** anterior. Puedes encontrar más información sobre cómo instalarlo y cómo configuarlo en esta sección: [Tutorial de Magic: Klayout](https://obijuan.github.io/Tutorial-Magic/08-klayout.html)
+
+Abrimos el fichero `test-ref.gds` pinchando en la opción **File/Open**. Se nos renderiza el fichero GDS en **2D** en la parte central
+
+![alt text](images/108-gds-01-klayout-2D.png)
+
+En el panel de la derecha podemos ver TODAS las capas que aparecen. En el renderizado sólo se dibujan las capas resaltadas en negrita
+
+Para obtener el **renderizado 3D** pinchamos en **Tools/2.5d View/Edit 2.5 Script**
+
+![alt text](images/109-gds-02-klayout-3D-1.png)
+
+En la nueva ventana que aparece pulsamos en el icono **Run current Script**
+
+![alt text](images/110-gds-03-klayout-3D-2.png)
+
+Nos aparece el **renderizado 3D**, que podemos mover con el ratón
+
+![alt text](images/111-gds-04-klayout-3D-3.png)
 
 
 🚧 TODO 🚧
-* Klayout
 * GDS3D
 * Conversion a STL
 * Visualizacion on-ine
