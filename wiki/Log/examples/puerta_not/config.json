@@ -1,0 +1,14 @@
+{
+    "DESIGN_NAME": "inv",
+    "VERILOG_FILES": [
+        "dir::inv.v"
+    ],
+    "CLOCK_PORT": null,
+    "DESIGN_IS_CORE": true,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 60 60",
+    "CORE_AREA": "10 10 50 50",
+    "PDK": "sky130A",
+    "STD_CELL_LIBRARY": "sky130_fd_sc_hd"
+}
+
