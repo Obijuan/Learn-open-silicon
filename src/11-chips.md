@@ -191,6 +191,29 @@ Este fichero ha sido generado con Freecad: [test.FCStd](examples/gdsiistl/test.F
 
 ### Visualización online (Recomendado)
 
+La manera más sencilla de renderizar un gds es utilizando este [Visualizador interactivo]( https://gds-viewer.tinytapeout.com/) del proyecto Tiny Tapeout. Las fuentes están en este repositorio de Github: [https://github.com/TinyTapeout/tinytapeout_gds_viewer](https://github.com/TinyTapeout/tinytapeout_gds_viewer)
+
+Esto es lo que aparece cuando entramos en el visualizador
+
+![alt text](images/115-gds-08-gds-viewer-1.png)
+
+Luego simplemente arrastramos el fichero **gds** desde el navegador de archivos, y se nos renderiza automáticamente. Inicialmente se muestra la **vista superior**
+
+![alt text](images/116-gds-09-gds-viewer-2.png)
+
+
+Con el ratón camabiamos la vista
+
+![](images/117-gds-10-gds-viewer-3.png)
+
+Si se aprieta en la opción **autoratorio**, el modelo empieza a rotar en sentido antihorario, lentamente. En cualquier momento lo podemos parar
+
+![alt text](images/118-gds-11-gds-viewer-4.png)  
+
+En el panel de la derecha están las diferentes capas, que se pueden ocultar/visualizar. Por ejemplo, ocultamos las capas Metal1 y mcon
+
+![alt text](images/119-gds-12-gds-viewer-5.png)
+
 🚧 TODO 🚧
 * 
 
